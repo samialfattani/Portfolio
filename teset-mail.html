@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    
+    <form method="post">
+        <input type="button" value="Send Email" onclick="sendEmail()" />
+        vmjqzpinbxrejvhd
+    </form>
+
+    <script type="text/javascript">
+        function sendEmail() 
+        {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "sami.alfattani@gmail.com",
+                Password: "pjswwpiobwievinb",
+                To: 'sami_alfattani@hotmail.com',
+                From: "sender@noreply.com",
+                Subject: "Sending Email using javascript",
+                Body: "Well that was easy!!",
+            })
+            .then( (msg) => {
+                console.log("mail sent successfully");
+                console.log(msg)
+            })
+            .catch( (err) => {
+                console.log("Error !!!!");
+                console.log(err)
+            });
+            
+            console.log('wait...')
+        }
+    </script>
+
+</body>
+</html>
