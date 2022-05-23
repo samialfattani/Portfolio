@@ -5,6 +5,21 @@
 * License: https://bootstrapmade.com/license/
 */
 
+
+#research ol {          
+  background-color: rgb(226, 243, 243);
+  margin: 10px;
+}        
+#research ol li {          
+  margin-bottom: 15px;
+}        
+
+#research ol i {          
+  font-size: 50pt;
+  float: right;
+}        
+
+
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -357,10 +372,11 @@ section {
 .facts .count-box i {
   display: block;
   font-size: 44px;
-  color: #149ddd;
+  color: #149ddd; /*#149ddd*/
   float: left;
   line-height: 0;
 }
+
 .facts .count-box span {
   font-size: 48px;
   line-height: 40px;
