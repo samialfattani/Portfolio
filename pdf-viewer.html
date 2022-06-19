@@ -10,11 +10,10 @@
 </head>
 <body>
     
-    <iframe id="gview" src="" 
+    <!-- <iframe id="gview" src="" 
             frameborder="0" width="100%" height="800">
-                    
-    </iframe>
-
+    </iframe> -->
+    <embed id="gview" src="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" style="position:absolute; left: 0; top: 0;" width="100%" height="100%" type="application/pdf">
 <script>
 
     //let searchParams = new URLSearchParams(window.location.search);
@@ -24,9 +23,13 @@
     // }
 
     $( document ).ready( () =>{
-        url = `http://docs.google.com/gview?url=https://samialfattani.github.io/assets/img/certs/IEEEXtream-10.0-2016-certificate.pdf&embedded=true`;
-        //url = `http://docs.google.com/gview?url=/assets/img/certs/IEEEXtream-10.0-2016-certificate.pdf&embedded=true`;
-        $('#gview').attr('src', url)
+        let searchParams = new URLSearchParams(window.location.search);
+        let page = searchParams.get('url')
+        console.log(searchParams.get('url'))
+        //url = `http://docs.google.com/gview?url=https://samialfattani.github.io/assets/img/certs/IEEEXtream-10.0-2016-certificate.pdf&embedded=true`;
+        
+        //url = `http://docs.google.com/gview?url=/IEEEXtream-10.0-2016-certificate.pdf&embedded=true`;
+        $('#gview').attr('src', page)
         //$('#gview').src  = 
         console.log('****')
     });
