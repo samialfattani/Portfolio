@@ -11,7 +11,13 @@
     
     <form method="post">
         <input type="button" value="Send Email" onclick="sendEmail()" />
-        vmjqzpinbxrejvhd
+        <br>
+        <h3>
+        <pre>
+            vmjqzpinbxrejvhd 
+            brnzioczzcisxcuo 
+        </pre>
+        </h3>
     </form>
 
     <script type="text/javascript">
@@ -20,14 +26,14 @@
             Email.send({
                 Host: "smtp.gmail.com",
                 Username: "sami.alfattani@gmail.com",
-                Password: "pjswwpiobwievinb",
+                Password: "brnzioczzcisxcuo",
                 To: 'sami_alfattani@hotmail.com',
                 From: "sender@noreply.com",
                 Subject: "Sending Email using javascript",
                 Body: "Well that was easy!!",
             })
             .then( (msg) => {
-                console.log("mail sent successfully");
+                console.log(`mail sent successfully: `);
                 console.log(msg)
             })
             .catch( (err) => {
