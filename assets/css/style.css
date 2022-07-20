@@ -60,6 +60,28 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
+
+/*------------------------------------------------------------------
+# Expand Block
+---------------------------------------------------------------------*/
+.expandable {
+  cursor: pointer;
+}
+
+.expandable+p, .expandable+div {
+  display: none;
+}
+
+.expandable:hover {
+  font-weight: bold;
+  color: #149ddd  ;
+}
+
+.expandable .bx {
+  float: right;
+  color: #149ddd;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -511,28 +533,8 @@ section {
   font-family: "cairo", sans-serif;
   background: #e4edf9;
   padding: 5px 15px;
-  color: #050d18;
+  /* color: #050d18;  */
   margin-bottom: 10px;
-}
-
-.expandable {
-  cursor: pointer;
-}
-
-.expandable + p {
-  display: none;
-}
-
-.resume .resume-item .expandable:hover {
-  font-weight: bold;
-  color: #149ddd;
-  border: 2px ; 
-  border-color: #149ddd;
-}
-
-.resume .resume-item h4 .bx {
-  float: right;
-  color: #149ddd;
 }
 
 .resume .resume-item h5 {
@@ -540,7 +542,7 @@ section {
   background: #e4edf9;
   padding: 5px 15px;
   /* display: inline-block; */
-  font-weight: 600;
+  /* font-weight: 600; */
   margin-bottom: 10px;
 }
 
