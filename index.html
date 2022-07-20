@@ -40,6 +40,10 @@
   <!-- <script src="assets/vendor/fontawesome/b3360409b2.js" ></script> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
   <!-- =======================================================
   * Template Name: iPortfolio - v3.7.0
   * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
@@ -92,6 +96,10 @@
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
+      <br>
+      <a href="assets/img/qr-code-business-card.png" target="_blank">
+        <img src="assets/img/qr-code-business-card.png" alt="" height="50" width="50">
+      </a>
     </div>
   </header><!-- End Header -->
 
@@ -512,13 +520,34 @@
             </div>
 
 
+
             <h3 class="resume-title">Achievments</h3>
             <div class="resume-item">
-              <h4>2020: Online Store</h4>
+              <h4 class="expandable">
+                2020: Online Store 
+                <i class='bx bxs-chevron-down-circle'></i>
+              </h4>
               <!-- <h5>2020</h5> -->
-              <fp><em>A solution of online store system build from scratch using Python-Flask framework integrated with MySQL. The system includes administration panel to manage different type of users, products, reports, and history log.</em></p>
+              <p><em>A solution of online store system build from scratch using Python-Flask framework integrated with MySQL. The system includes administration panel to manage different type of users, products, reports, and history log.</em></p>
             </div>
   
+
+            <script>
+              $(".expandable").click(function () {
+
+                $header = $(this);
+                $content = $header.next();
+
+                $content.slideToggle(250, () => {
+                    $header.text( () => {
+                        //change text based on condition
+                        return $content.is(":visible") ? "Collapse" : "Expand";
+                    });
+                });
+
+              });              
+            </script>
+
             <div class="resume-item">
               <h4>2019: E-learning System for CLOs & PLOs</h4>
               <!-- <h5>2019</h5> -->

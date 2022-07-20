@@ -506,13 +506,33 @@ section {
 .resume .resume-item h4 {
   /* line-height: 18px; */
   font-size: 18px;
-  font-weight: 600;
+  /* font-weight: 600; */
   text-transform: uppercase;
   font-family: "cairo", sans-serif;
   background: #e4edf9;
   padding: 5px 15px;
   color: #050d18;
   margin-bottom: 10px;
+}
+
+.expandable {
+  cursor: pointer;
+}
+
+.expandable + p {
+  display: none;
+}
+
+.resume .resume-item .expandable:hover {
+  font-weight: bold;
+  color: #149ddd;
+  border: 2px ; 
+  border-color: #149ddd;
+}
+
+.resume .resume-item h4 .bx {
+  float: right;
+  color: #149ddd;
 }
 
 .resume .resume-item h5 {
@@ -816,8 +836,8 @@ section {
   margin: 0px;
   padding-left: 5px;
   font-size: 35px;
-  position: absolute;
   bottom: 10px;  
+  position: absolute;
 }
 /*--------------------------------------------------------------
 # Contact
