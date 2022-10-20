@@ -382,32 +382,10 @@ section {
   /* line-height: 0; */
 }
 
-/* Sami */
-.about .content td i{
-  font-size: 50px;
-  margin-right: 5px;
-  color: #149ddd;
-  /*line-height: 0;*/
-}
-
-.about .content table tr{
-  margin-bottom: 500px;
-}
-
-.about .content table td.icon {
-  
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-  vertical-align: middle;
-}
-
-
 .about .content p:last-child {
   margin-bottom: 0;
 }
+
 
 /*--------------------------------------------------------------
 # Facts
@@ -497,9 +475,23 @@ section {
 }
 
 
+/*------------------------------------------------------------------
+# Research Block
+---------------------------------------------------------------------*/
+
+/* Sami */
+.research .content .fas{
+  font-size: 50px;
+  margin-right: 5px;
+  margin-left: 7px;
+  color: #149ddd;
+  /*line-height: 0;*/
+}
+
+
 
 /*------------------------------------------------------------------
-# Expand Block
+# Expand Feature
 ---------------------------------------------------------------------*/
 .expandable {
   cursor: pointer;

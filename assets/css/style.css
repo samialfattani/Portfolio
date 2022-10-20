@@ -61,26 +61,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/*------------------------------------------------------------------
-# Expand Block
----------------------------------------------------------------------*/
-.expandable {
-  cursor: pointer;
-}
-
-.expandable+p, .expandable+div {
-  display: none;
-}
-
-.expandable:hover {
-  font-weight: bold;
-  color: #149ddd  ;
-}
-
-.expandable .bx {
-  float: right;
-  /* color: #149ddd; */
-}
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -389,32 +369,10 @@ section {
   /* line-height: 0; */
 }
 
-/* Sami */
-.about .content td i{
-  font-size: 50px;
-  margin-right: 5px;
-  color: #149ddd;
-  /*line-height: 0;*/
-}
-
-.about .content table tr{
-  margin-bottom: 500px;
-}
-
-.about .content table td.icon {
-  
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  text-align: center;
-  vertical-align: middle;
-}
-
-
 .about .content p:last-child {
   margin-bottom: 0;
 }
+
 
 /*--------------------------------------------------------------
 # Facts
@@ -502,6 +460,44 @@ section {
   transition: 0.9s;
   background-color: #1086bd;
 }
+
+
+
+/*------------------------------------------------------------------
+# Research Block
+---------------------------------------------------------------------*/
+
+/* Sami */
+.research .content .fas{
+  font-size: 50px;
+  margin-right: 7px;
+  margin-left: 5px;
+  color: #149ddd;
+  /*line-height: 0;*/
+}
+
+
+/*------------------------------------------------------------------
+# Expand Block
+---------------------------------------------------------------------*/
+.expandable {
+  cursor: pointer;
+}
+
+.expandable+p, .expandable+div {
+  display: none;
+}
+
+.expandable:hover {
+  font-weight: bold;
+  color: #149ddd  ;
+}
+
+.expandable .bx {
+  float: right;
+  /* color: #149ddd; */
+}
+
 
 /*--------------------------------------------------------------
 # Resume
