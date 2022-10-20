@@ -60,6 +60,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Noto Kufi Arabic", sans-serif;
 }
 
+
+
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -493,6 +496,29 @@ section {
   background-color: #1086bd;
 }
 
+
+
+/*------------------------------------------------------------------
+# Expand Block
+---------------------------------------------------------------------*/
+.expandable {
+  cursor: pointer;
+}
+
+.expandable+p, .expandable+div {
+  display: none;
+}
+
+.expandable:hover {
+  font-weight: bold;
+  color: #149ddd  ;
+}
+
+.expandable .bx{
+  float: left;
+  /* color: red; */
+}
+
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
@@ -503,31 +529,34 @@ section {
   margin-bottom: 20px;
   color: #149ddd;
 }
+
+/* side line */
 .resume .resume-item {
-  padding: 0 0 20px 20px;
+  padding: 0px 20px 20px 0px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-right: 2px solid #1f5297;
   position: relative;
 }
 
 .resume .resume-item h4 {
   /* line-height: 18px; */
   font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
   font-family: "Cairo", sans-serif;
   background: #e4edf9;
   padding: 5px 15px;
-  color: #050d18;
+  /* color: #050d18; */
+  /* text-transform: uppercase; */
+  /* font-weight: 600; */
   margin-bottom: 10px;
 }
 
 .resume .resume-item h5 {
   font-size: 16px;
+  font-family: "Cairo", sans-serif;
   background: #e4edf9;
   padding: 5px 15px;
   /* display: inline-block; */
-  font-weight: 600;
+  /* font-weight: 600; */
   margin-bottom: 10px;
 }
 
@@ -540,13 +569,15 @@ section {
 .resume .resume-item:last-child {
   padding-bottom: 0;
 }
+
+/* Circle */
 .resume .resume-item::before {
   content: "";
   position: absolute;
   width: 16px;
   height: 16px;
   border-radius: 50px;
-  left: -9px;
+  right: -9px;
   top: 0;
   background: #fff;
   border: 2px solid #1f5297;

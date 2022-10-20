@@ -42,6 +42,10 @@
   <!-- our project just needs Font Awesome Solid + Brands -->
   <script src="assets/vendor/fontawesome/b3360409b2.js" ></script>
 
+  <!-- JQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
   <!-- =======================================================
   * Template Name: iPortfolio - v3.7.0
   * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
@@ -512,7 +516,9 @@
               
               <p><em>جامعة شفيلد في بريطيانيا</em></p>
               <p> <b>تخصص معالجة اللغة الطبيعية (NLP)</b> </p>              
-              
+            </div>
+
+            <div class="resume-item">
               <h5>2009 - 20012: ماجستير في الهندسة وعلوم الحاسب</h5>
               <!-- <h4>Master of Engineering & Computer Science</h4> -->
               
@@ -522,9 +528,10 @@
                 باستخدام الحوسبة المتوازية وذلك عن طريق استغلال معالج الرسومات (GPGPU)
               </p>
             </div>
+
             <div class="resume-item">
               <!-- <h4>Bachelor of Computer Engineering</h4> -->
-              <h5>2001 - 2006: بكالوريوس في هندسة الحاسب</h5>
+              <h5 class="expandable">2001 - 2006: بكالوريوس في هندسة الحاسب</h5>
               <p><em>جامعة أم القرى (UQU),
                     مكة، السعودية
               </em></p>
@@ -534,38 +541,42 @@
 
             <h3 class="resume-title">بعض الانجازات</h3>
             <div class="resume-item">
-              <h4>2020: متجر رقمي</h4>
-              <!-- <h5>2020</h5> -->
-              <fp><em>حل الكتروني لمتجر رقمي  مبني من الصفر باستخدام  Python-Flask framework 
+              <h4 class="expandable">2020: متجر رقمي</h4>
+              <!-- <h5 class="expandable">2020</h5> -->
+              <p>
+                <em>حل الكتروني لمتجر رقمي  مبني من الصفر باستخدام  Python-Flask framework 
                 متكاملا مع قاعدة بيانات MySQL. 
                 يحتوي النظام على لوحة تحكم شاملة للتحكم في المنتجات والمستخدمين، وتحتوي اللوحة على عدة انواع من المستخدمين وكما تحتوي على التقارير والمنتجات والسجل التاريخي logs
-                </em></p>
+                </em>
+              </p>
             </div>
   
             <div class="resume-item">
-              <h4>2019: نظام لقياس أداء مخرجات التعلم CLO & PLO</h4>
-              <!-- <h5>2019</h5> -->
+              <h4 class="expandable">2019: نظام لقياس أداء مخرجات التعلم CLO & PLO </h4>
+              <!-- <h5>2019 <i class='bx bxs-chevron-down-circle'></i></h5> -->
               <p><em>نظام في التعليم الالكتروني يقوم بأتمتة مخرجات التعلم للمادة (CLO)
                  وموائمتها مع مخرجات التعلم البرامجية(PLO). 
                  صمم هذا المشروع ليكون متوافقاً مع كل من متطلبات منظمة   <b>ABET</b> و
-                الهيئة الوطنية للإعتماد الأكاديمي <b>NCAAA</b>.</em></p>
+                الهيئة الوطنية للإعتماد الأكاديمي <b>NCAAA</b>.</em>
+              </p>
             </div>
 
+
             <div class="resume-item">
-              <h4>2018: التعلم الآلي (ML)</h4>
+              <h4 class="expandable">2018: التعلم الآلي (ML)</h4>
               <!-- <h5>2018</h5> -->
               <p><em>نموذج مبدئي لأتمتة أقفال الأبواب باستخدام التعلم الآلي (ML) 
                 وذلك من خلال التعرف على الوجه. تم تدريب الآلة باستخدام CNN model.</em></p>
             </div>
             
             <div class="resume-item">
-              <h4>2018: الهندسة العكسية الاستاتيكية</h4>
+              <h4 class="expandable">2018: الهندسة العكسية الاستاتيكية</h4>
               <!-- <h5>2018</h5> -->
               <p><em>مهمة في دمج نظام لقاعدة بيانات مقسم على نسختين في مركزي بيانات منفصلين إلى مركز بيانات واحد يحوي جميع البيانات. أخذ المشروع أكثر من سنة في التحليل والهندسة العكسية وتم اعادة هيكلة النظام والبيانات لتوافق شكلها الجديد بعد الدمج.</em></p>
             </div>
 
             <div class="resume-item">
-              <h4>2016: نظام تعليم الكتروني للاختبارات</h4>
+              <h4 class="expandable">2016: نظام تعليم الكتروني للاختبارات</h4>
               <!-- <h5>2016</h5> -->
               <p><em>نظام للتعليم الالكتروني مخصص للمؤسسات الأكاديمية، يقوم بأتمتة الاختبارات على الشبكة المحلية او شبكة الانترنت . تم عمل النظام باسلوب الخادم والعميل (client-server).
               النظام يتسم بالمرونة، والموثوقية، وقابليته للتخصيص، وامكانية تطبيقه على عدة أشكال من الاختبارات.
@@ -578,27 +589,32 @@
             <h3 class="resume-title">الخبرات المهنية</h3>
             <div class="resume-item">
               <!-- <h4>Software Engineering (SE) Lecturer & Developer</h4> -->
-              <h5>2013 - 2022: محاضرة في هندسة البرمجيات</h5>
+              <h5 class="expandable">2013 - 2022: محاضرة في هندسة البرمجيات</h5>
+              <div>
               <p><em>جامعة الأعمال والتكنولوجيا (UBT)،جدة ، السعودية</em></p>
               <ul>
                 <li>تدريس أكثر من 30 مادة مختلفة مثل مواد البرمجة وقواعد البيانات ، البيانات الهيكلية والخوارزميات ، وتطبيقات الويب، وتطبيقات الموبايل، وغيرها .</li>
                 <li>تدريب العديد من الطلاب في المهارات البرمجة لتمكنهم من المشاركة في العديد من المسابقات والهكاثونات المحلية والدولية مثل  IEEEXtreme Competition.</li>
               </ul>
+              </div>
             </div>
 
             <div class="resume-item">
               <!-- <h4>Software Engineering (SE) Lecturer & Developer</h4> -->
-              <h5>2013 - 2022: مطور بدوام جزئي</h5>
+              <h5 class="expandable">2013 - 2022: مطور بدوام جزئي</h5>
+              <div>
               <p><em>جامعة الأعمال والتكنولوجيا (UBT)،جدة ، السعودية</em></p>
               <ul>
                 <li>عمل حلول في تقنية المعلومات من ضمنها بناء نظام لقياس الأداء في الاعتماد الأكاديمي</li>
                 <li>دمج قاعدة بيانات موزعة على مركزين للبيانات في قاعدة بيانات واحدة باستخدام الهندسة العكسية</li>
               </ul>
+              </div>
             </div>
 
             <div class="resume-item">
               <!-- <h4>Director of Innovation Center</h4> -->
-              <h5>2016 – 2021: مدير مركز الإبداع والابتكار  </h5>
+              <h5 class="expandable">2016 – 2021: مدير مركز الإبداع والابتكار  </h5>
+              <div>
               <p><em>جامعة الأعمال والتكنولوجيا (UBT)،جدة ، السعودية</em></p>
               <ul>
                 <li>تدريب والإشراف على الطلاب المشاركين في مسابقة هكاثون مكة للبرمجة والذكاء الاصطناعي في 2021</li>
@@ -613,43 +629,50 @@
                   وقد حقق الفريق نتيجة منافسة (المركز الثالث على السعودية)   
                 </li>
               </ul>
+              </div>
             </div>
 
             <div class="resume-item">
               <!-- <h4>Database developer (ORACLE)</h4> -->
-              <h5>2014 – 2016: مبرمج لقواعد البيانات (ORACLE)</h5>
+              <h5 class="expandable">2014 – 2016: مبرمج لقواعد البيانات (ORACLE)</h5>
+              <div>
               <p><em>جامعة أم القرى ، عمادة تقنية المعلومات، مكة، السعودية</em></p>
               <ul>
                 <li>تطوير نظام شؤون الموظفين والرواتب</li>
                 <li>تطوير قواعد البيانات وتكاملها مع واجهات الويب</li>
                 <li>تطوير نظام لشؤون المبتعثين</li>
               </ul>
+              </div>
             </div>
 
             <div class="resume-item">
               <!-- <h4>Solution Analyst</h4> -->
-              <h5>2013 – 2014: محلل نظم</h5>
+              <h5 class="expandable">2013 – 2014: محلل نظم</h5>
+              <div>
               <p><em>مؤسسة جاما للتطوير البرمجي</em></p>
               <ul>
                 <li>محلل نظم وصانع قرار في كيفية تنفيذ متطلبات العميل</li>
                 <li>اختبار وتقييم جودة الأنظمة البرمجية</li>
               </ul>
+              </div>
             </div>
 
             <div class="resume-item">
               <!-- <h4>Business Developer </h4> -->
-              <h5>2013 – 2014: مطور نظم تجارية</h5>
+              <h5 class="expandable">2013 – 2014: مطور نظم تجارية</h5>
+              <div>
               <p><em>قسم تقنية المعلومات في شركة الناغي المحدودة</em></p>
               <ul>
                 <li>تطوير نظام كامل لأتمتة تدفق سير العمل داخل الشركة</li>
                 <li>تطوير نظام البصمة وانتاج تقارير الحضور على الويب</li>
                 <li>تطوير التحديث التلقائي لنظام الشركة من جميع الفروع</li>
               </ul>
+              </div>
             </div>
 
             <div class="resume-item">
               <!-- <h4>Part-time job as a Programmer & Web developer</h4> -->
-              <h5>2008 – 2010: مطور ومصمم ويب بدوام جزئي</h5>
+              <h5 class="expandable">2008 – 2010: مطور ومصمم ويب بدوام جزئي</h5>
               <p><em>مجموعة فنون ولمسات للتطوير العقاري</em></p>
             </div>
 
@@ -1017,6 +1040,7 @@
     </section><!-- End Contact Section -->
 
 
+    
     <script type="text/javascript">
       function sendEmail() 
       {
@@ -1065,6 +1089,27 @@
         }
 
       }//end function
+  </script>
+
+
+  <!-- ---------------------------- EXPAND BLOCKS ---------------------------- -->
+  <script type="text/javascript">
+
+    $(".expandable").append(`<i class='bx bxs-chevron-down-circle'></i>`);
+
+    $(".expandable").click(function () {
+
+      $header = $(this);
+      $content = $header.next();
+      $content.slideToggle(250, () => {
+        if ($content.is(":visible")){
+          $header.find(".bx").removeClass("bxs-chevron-down-circle").addClass("bxs-chevron-up-circle");
+        }else{
+          $header.find(".bx").removeClass("bxs-chevron-up-circle").addClass("bxs-chevron-down-circle");
+        }
+      });
+
+    });              
   </script>
 
 
